@@ -9,7 +9,7 @@ globalvar WAVE_START;
 WAVE_START = false
 
 globalvar NUM_ENEMY;
-NUM_ENEMY = 6
+NUM_ENEMY = 12
 
 random_gen_num = 0;
 

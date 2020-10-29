@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "New Objects",
-    "path": "folders/Objects/New Objects.yy",
+    "name": "Assignment Objects",
+    "path": "folders/Objects/Assignment Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_enemy_gen",

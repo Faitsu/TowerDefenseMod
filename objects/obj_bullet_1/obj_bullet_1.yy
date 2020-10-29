@@ -23,12 +23,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_bullet_1","path":"objects/obj_bullet_1/obj_bullet_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_bullet_1","path":"objects/obj_bullet_1/obj_bullet_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "New Objects",
-    "path": "folders/Objects/New Objects.yy",
+    "name": "Assignment Objects",
+    "path": "folders/Objects/Assignment Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bullet_1",
