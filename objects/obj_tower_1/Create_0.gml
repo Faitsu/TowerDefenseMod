@@ -23,8 +23,8 @@ crit_chance = 25		// the % chance to critically hit
 
 shot_splash = false	// if the bullet does damage in an area
 
-shot_dmg_min = 50	// minimum damage of bullet
-shot_dmg_max = 70	// maximum damage of bullet
+shot_dmg_min = 40	// minimum damage of bullet
+shot_dmg_max = 60	// maximum damage of bullet
 shot_crit_mult = 2	// number damage is multiplied by on crit
 
 shot_dmg_bonus = 10		// extra dmg per 10% hp missing

@@ -11,6 +11,9 @@ WAVE_START = false
 globalvar NUM_ENEMY;
 NUM_ENEMY = 12
 
+globalvar NUM_WAVES;
+NUM_WAVES = 0;
+
 random_gen_num = 0;
 
 enemy_to_gen = 0

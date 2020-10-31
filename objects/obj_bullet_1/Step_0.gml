@@ -46,7 +46,23 @@ if shot_hit{
 
 	var _dmg = irandom_range(my_tower.shot_dmg_min,my_tower.shot_dmg_max)+ my_tower.shot_dmg_bonus_apply
 	if(TypeMatchup(targ_type)){
-		_dmg = _dmg * 1.5; //increase damage if we have super effective damage
+		_dmg = _dmg * 1.25; //increase damage if we have super effective damage
+	}
+	else{
+		_dmg = _dmg * .85; //decrease otherwise because the types are not very effective
+	}
+	
+	//status effect code that might just be to balance out
+	
+	random_gen = irandom_range(1,20);
+	//Chance to put on status effect
+	
+	if(random_gen >= 10){// 1/20 chance to put on a status effect
+		if(bType == objType.FIRE){
+			my_target.burn = true;
+			}
+		else if(bType == objType.GRASS){my_target.slow = true;}
+		
 	}
 	
 	var _miss_roll = random_range(0,100)
@@ -64,18 +80,24 @@ if shot_hit{
 		shot_hit = false
 	}else
 	if shot_crit{
-		effect_create_above(ef_smoke,x,y,1,c_teal)
+		//effect_create_above(ef_smoke,x,y,1,c_teal)
+		if(bType == objType.FIRE){effect_create_above(ef_explosion,x,y,1,c_orange)}
+		else if(bType == objType.GRASS){effect_create_above(ef_firework,x,y,1,c_lime)}
+		else if(bType == objType.WATER){effect_create_above(ef_ellipse,x,y,1,c_teal)}
 		effect_create_above(ef_star,x,y,1,c_yellow)
 		if(TypeMatchup(targ_type)){
-			effect_create_above(ef_spark,x,y,1,c_red)
+			effect_create_above(ef_spark,x,y,1,c_white)
 		}
 		my_target.hp -= _dmg * my_tower.shot_crit_mult
 		instance_destroy()
 	}else{
 		if(TypeMatchup(targ_type)){
-			effect_create_above(ef_spark,x,y,1,c_red)
+			effect_create_above(ef_spark,x,y,1,c_white)
 		}
-		effect_create_above(ef_smoke,x,y,1,c_teal)
+		//effect_create_above(ef_smoke,x,y,1,c_teal)
+		if(bType == objType.FIRE){effect_create_above(ef_explosion,x,y,1,c_orange)}
+		else if(bType == objType.GRASS){effect_create_above(ef_firework,x,y,1,c_lime)}
+		else if(bType == objType.WATER){effect_create_above(ef_ellipse,x,y,1,c_teal)}
 		my_target.hp -= _dmg
 		instance_destroy()
 	}

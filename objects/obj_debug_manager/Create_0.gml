@@ -22,6 +22,6 @@ hp_draw_y = room_height - 12 - hp_draw_h
 
 globalvar PLAYER_HP;
 globalvar PLAYER_HP_MAX;
-PLAYER_HP_MAX = 10
+PLAYER_HP_MAX = 20
 PLAYER_HP = PLAYER_HP_MAX
 player_hp_disp = PLAYER_HP_MAX
