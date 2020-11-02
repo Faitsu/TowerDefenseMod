@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tower_grass",
-    "path": "sprites/spr_tower_grass/spr_tower_grass.yy",
+    "name": "spr_tower_grass_s",
+    "path": "sprites/spr_tower_grass_s/spr_tower_grass_s.yy",
   },
   "solid": false,
   "visible": true,

@@ -41,3 +41,4 @@ if WAVE_START{
 	draw_set_color(c_fuchsia)
 	draw_text(12,room_height-76,"<< WAVE ACTIVE >>")
 }
+

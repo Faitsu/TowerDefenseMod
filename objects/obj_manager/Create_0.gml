@@ -1,5 +1,65 @@
-/// @description Insert description here
-// You can write your code in this editor
 event_inherited();
-//adding extra enum vars to hold the type of enemy we are dealing with
+
 enum objType {GRASS,FIRE,WATER};
+
+globalvar NUM_WAVES;
+globalvar ENEMY_KILLED;
+
+globalvar CURRENCY_AMT;
+globalvar NUM_WATER_TOWERS;
+globalvar NUM_FIRE_TOWERS;
+globalvar NUM_GRASS_TOWERS;
+
+globalvar WATER_TOWER_PRICE;
+globalvar FIRE_TOWER_PRICE;
+globalvar GRASS_TOWER_PRICE;
+
+globalvar NUM_S_WATER_TOWERS;
+globalvar NUM_S_FIRE_TOWERS;
+globalvar NUM_S_GRASS_TOWERS;
+
+globalvar S_WATER_TOWER_PRICE;
+globalvar S_FIRE_TOWER_PRICE;
+globalvar S_GRASS_TOWER_PRICE;
+
+globalvar TOWER_PRESENT;
+
+globalvar FIRE_TOGGLED;
+globalvar WATER_TOGGLED;
+globalvar GRASS_TOGGLED;
+
+globalvar S_FIRE_TOGGLED;
+globalvar S_WATER_TOGGLED;
+globalvar S_GRASS_TOGGLED;
+
+NUM_WAVES = 0
+
+ENEMY_KILLED = 0
+
+CURRENCY_AMT = 60
+
+NUM_WATER_TOWERS = 0
+NUM_FIRE_TOWERS = 0
+NUM_GRASS_TOWERS = 0
+
+NUM_S_WATER_TOWERS = 0
+NUM_S_FIRE_TOWERS = 0
+NUM_S_GRASS_TOWERS = 0
+
+WATER_TOWER_PRICE = 10
+FIRE_TOWER_PRICE = 15
+GRASS_TOWER_PRICE = 20
+
+S_WATER_TOWER_PRICE = 5
+S_FIRE_TOWER_PRICE = 8
+S_GRASS_TOWER_PRICE = 10
+
+FIRE_TOGGLED = false
+WATER_TOGGLED = false
+GRASS_TOGGLED = false
+
+S_FIRE_TOGGLED = false
+S_WATER_TOGGLED = false
+S_GRASS_TOGGLED = false 
+
+

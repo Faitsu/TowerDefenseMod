@@ -17,7 +17,7 @@ my_scale = hp_max/1000
 
 burn = false;
 slow = false;
-slowed_mspd = mspd *.65;
+slowed_mspd = mspd *.55;
 timer = 0;
 
 //________________________________

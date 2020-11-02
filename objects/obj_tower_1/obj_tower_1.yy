@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_debug_tower",
-    "path": "objects/obj_debug_tower/obj_debug_tower.yy",
+    "name": "obj_tower",
+    "path": "objects/obj_tower/obj_tower.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

@@ -57,11 +57,15 @@ if shot_hit{
 	random_gen = irandom_range(1,20);
 	//Chance to put on status effect
 	
-	if(random_gen >= 10){// 1/20 chance to put on a status effect
+	if(random_gen <= 5){// 25% chance to put on a status effect
 		if(bType == objType.FIRE){
 			my_target.burn = true;
 			}
-		else if(bType == objType.GRASS){my_target.slow = true;}
+		else if(bType == objType.GRASS){
+			my_target.slow = true;
+			//bug rn with sprite not changing, so I will add an effect to show the status went on
+			effect_create_above(ef_smoke,x,y,1,c_green)
+		}
 		
 	}
 	

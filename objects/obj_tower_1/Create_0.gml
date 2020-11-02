@@ -19,12 +19,12 @@ shot_spd = 8		// speed of bullet
 shot_follows = true	// if shot follows the target or just goes to the location
 
 miss_chance = 15		// the % chance to miss
-crit_chance = 25		// the % chance to critically hit
+crit_chance = 35		// the % chance to critically hit
 
 shot_splash = false	// if the bullet does damage in an area
 
 shot_dmg_min = 40	// minimum damage of bullet
-shot_dmg_max = 60	// maximum damage of bullet
+shot_dmg_max = 55	// maximum damage of bullet
 shot_crit_mult = 2	// number damage is multiplied by on crit
 
 shot_dmg_bonus = 10		// extra dmg per 10% hp missing

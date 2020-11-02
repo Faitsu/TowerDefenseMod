@@ -17,6 +17,7 @@ if keyboard_check_pressed(vk_right){
 
 
 if keyboard_check_pressed(vk_space){
+
 	if WAVE_START{
 		WAVE_START = false
 		instance_destroy(obj_debug_bullet)

@@ -20,4 +20,3 @@ if WAVE_START{
 		}
 	}
 }
-
